@@ -1,0 +1,41 @@
+.works {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 47px;
+  }
+}
+
+.works-list {
+  display: flex;
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__img-inner {
+    @extend %flex-centered;
+
+    position: absolute;
+    bottom: 0;
+
+    height: 70px;
+    width: 100%;
+    background-color: var(--img-text-bg-color);
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--text-color-white);
+  }
+}
