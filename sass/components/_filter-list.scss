@@ -9,6 +9,8 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 25px;
+    row-gap: 0;
+    column-gap: 0;
   }
 
   @media screen and (min-width: 1200px) {
